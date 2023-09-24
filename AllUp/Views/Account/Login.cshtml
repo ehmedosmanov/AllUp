@@ -1,0 +1,96 @@
+﻿@model LoginVM
+<!--====== Login Part Start ======-->
+<section class="login-area pt-10">
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="login-register-wrapper mt-30">
+                    <h4 class="allup-title">Login to Your Account</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <form method="post">
+                        <div class="single-form">
+                            <input type="text" asp-for="Username" placeholder="Username or email *">
+                            <span class="text-danger" asp-validation-for="Username"></span>
+                        </div>
+                        <div class="single-form">
+                            <input type="password" asp-for=Password placeholder="Password">
+                            <span class="text-danger" asp-validation-for="Password"></span>
+
+                        </div>
+                        <div class="custom-checkbox mt-30">
+                            <input type="checkbox" asp-for="IsRemember">
+                            <label asp-for="IsRemember"></label>
+                        </div>
+                        <div class="single-form">
+                            <button class="main-btn main-btn-2">Login</button>
+                        </div>
+                    </form>
+                    <p class="mt-20"><a href="#">Lost your password?</a></p>
+                    <p class="mt-10">No account? <a href="register.html">Create one here.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--====== Login Part Ends ======-->
+<!--====== Brand Part Start ======-->
+
+<div class="brand-area pt-80">
+    <div class="container-fluid custom-container">
+        <div class="row brand-active">
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-1.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-2.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-3.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-5.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-6.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+            <div class="col-lg-2">
+                <div class="single-brand">
+                    <a href="#">
+                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                    </a>
+                </div> <!-- single brand -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+
+<!--====== Brand Part Ends ======-->

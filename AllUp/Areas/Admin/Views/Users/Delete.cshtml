@@ -1,0 +1,21 @@
+﻿@model UserVM
+
+<h2>Delete User</h2>
+
+<p>Are you sure you want to delete the following user?</p>
+
+<table class="table">
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+    </tr>
+        <td>@Model.UserName</td>
+        <td>@Model.Email</td>
+    </tr>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
